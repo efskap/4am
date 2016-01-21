@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Is it 4 AM in Finland Yet?</title>
+		<style>
+		body
+		{
+			position: fixed;
+			top: 20%;
+			left: auto;
+			width: 100%;
+			text-align: center;
+		}
+		big{
+			font-size:120px;
+		}
+		</style>
+
+	</head>
+	<body>
+		<h1>Is it 4 AM in Finland Yet?</h1>
+		<big id="content"></big>
+
+		<script>
+		var hr = new Date().toLocaleString('en-US', {hour: '2-digit',   hour12: false, timeZone: 'Europe/Helsinki' });
+		document.getElementById("content").innerHTML = (hr === "04") ? "Yes. Torilla tavataan!" : "No.";
+
+
+		</script>
+	</body>
+</html>
