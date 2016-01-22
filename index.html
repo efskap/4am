@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Is it 4 AM in Finland Yet?</title>
+		<title>Is it 4 AM in Finland yet?</title>
 		<style>
 		body
 		{
@@ -18,21 +18,14 @@
 			padding-top: 30px;
 		}
 		</style>
-
 	</head>
 	<body>
 		<h1>Is it 4 AM in Finland Yet?</h1>
 		<big id="content"></big>
-
 		<script>
-	//	var hr = new Date().toLocaleString('en-US', {hour: '2-digit',   hour12: false, timeZone: 'Europe/Helsinki' });
-		 var d = new Date();
-
-    	var fi = d.getUTCHours() + 2;
-    	console.log(fi);
+		var d = new Date();
+		var fi = d.getUTCHours() + 2;
 		document.getElementById("content").innerHTML = (fi === 4) ? "Yes. Torilla tavataan!<br/><img src=\"img.jpeg\">" : "No.";
-
-
 		</script>
 	</body>
 </html>
