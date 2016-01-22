@@ -5,7 +5,7 @@
 		<style>
 		body
 		{
-			position: fixed;
+			position: absolute;
 			top: 20%;
 			left: auto;
 			width: 100%;
@@ -13,6 +13,9 @@
 		}
 		big{
 			font-size:120px;
+		}
+		img{
+			padding-top: 30px;
 		}
 		</style>
 
@@ -27,7 +30,7 @@
 
     	var fi = d.getUTCHours() + 2;
     	console.log(fi);
-		document.getElementById("content").innerHTML = (fi === 4) ? "Yes. Torilla tavataan!" : "No.";
+		document.getElementById("content").innerHTML = (fi === 4) ? "Yes. Torilla tavataan!<br/><img src=\"img.jpeg\">" : "No.";
 
 
 		</script>
