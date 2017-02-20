@@ -13,14 +13,15 @@
 			text-align: center;
 			background-image: url("gray_jean.png");
 			color: #7d6f60;
-    		background-repeat: repeat;
+    			background-repeat: repeat;
 		}
 		big{
 			font-size:120px;
 			text-shadow: 2px 2px 3px #CCC;
 		}
 		img{
-			padding-top: 30px;
+			margin-top: 0.7em;
+			display: block;
 		}
 		</style>
 	</head>
@@ -44,9 +45,11 @@
 		var d = new Date();
 		var fi = d.getUTCHours() + (d.dst() ? 3 : 2); // UTC+3 if dst, +2 otherwise.
 		var text = '';
-		if(fi === 4)
-			text = "Yes. Torilla tavataan!<br/><img src=\"img.jpeg\">";
-		else{
+		if (fi === 4)
+		{
+			text = "Yes. Torilla tavataan! <img src=\"img.jpeg\">";
+		} else
+		{
 			text = "No. It's ";
 			if(fi <= 12)
 				text += fi;
