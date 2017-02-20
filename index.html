@@ -42,7 +42,7 @@
 		    return this.getTimezoneOffset() < this.stdTimezoneOffset();
 		}
 		var d = new Date();
-		var fi = d.getUTCHours() + d.dst() ? 3 :2; // UTC+3 if dst, +2 otherwise.
+		var fi = d.getUTCHours() + (d.dst() ? 3 : 2); // UTC+3 if dst, +2 otherwise.
 		var text = '';
 		if(fi === 4)
 			text = "Yes. Torilla tavataan!<br/><img src=\"img.jpeg\">";
